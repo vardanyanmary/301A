@@ -1,0 +1,155 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+.Home {
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+.styles {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.imagesDiv {
+    max-width: 1920px;
+    width: 100%;
+    max-height: 785px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flexCenter();
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.firstImg {
+    max-width: 134px;
+    width: 100%;
+    max-height: 134px;
+    height: 100%;
+    transform: rotate(90deg);
+}
+
+.secondImg {
+    max-width: 650px;
+    width: 100%;
+    max-height: 650px;
+    height: 100%;
+}
+
+.romb {
+    max-width: 1235px;
+    width: 100%;
+    max-height: 785px;
+    height: 100%;
+    @include flexCenter();
+    justify-content: center;
+}
+
+.content {
+    max-width: 1235px;
+    width: 100%;
+    h2 {
+        color: #151C26;
+        font-size: 46px;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+    p {
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 31px;
+    }
+}
+
+.buttonDiv {
+    @include flexCenter();
+    justify-content: space-between;
+    box-sizing: border-box;
+    .be{
+        width: 245px;
+        height: 50px;
+        border-radius: 46px;
+        background: #DD264E;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+    }
+    .all{
+        width: 245px;
+        height: 50px;
+        border-radius: 46px;
+        border: 2px solid #151C26;
+        background: rgba(255, 255, 255, 0.12);
+        color: #151C26;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+}
+
+.contentImgTexts {
+    max-width: 1000px;
+    width: 100%;
+    @include flexCenter();
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-direction: row;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+}
+
+.img301 {
+    max-width: 750px;
+    width: 100%;
+    margin: 0;
+}
+
+.socialMedia {
+    @include flexCenter();
+    flex-direction: column;
+}
+
+.followUs {
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(360deg);
+    white-space: nowrap;
+}
+
+.line {
+    width: 1px;
+    height: 50px;
+    background-color: #151C26;
+    margin: 7px 0;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+    img {
+        margin-bottom: 3px;
+    }
+}
+
+.iconItem {
+    width: 10px;
+    height: 15px;
+}
+
+button {
+    cursor: pointer;
+}
