@@ -15,13 +15,13 @@ export const Home = () => {
   return (
     <section className={cls.Home}>
       <img src={topStyle} alt="style" className={cls.styles} />
-
+{/* 
       <div className={cls.imagesDiv}>
         <img src={firstImg} alt="" className={cls.firstImg} />
         <img src={secondImg} alt="" className={cls.secondImg} />
         <img src={firstImg} alt="" className={cls.firstImg} />
       </div>
-      <img src={romb} alt="" className={cls.romb} />
+      <img src={romb} alt="" className={cls.romb} /> */}
 
       <div className={cls.contentImgTexts}>
         <div className={cls.content}>
@@ -46,11 +46,11 @@ export const Home = () => {
           <span className={cls.followUs}> Follow Us </span>
           <div className={cls.line}></div>
           <div className={cls.icons}>
-            <img src={fb} alt="" className={cls.iconItem}/>
-            <img src={inst} alt="" className={cls.iconItem}/>
-            <img src={lin} alt="" className={cls.iconItem}/>
-            <img src={teleg} alt="" className={cls.iconItem}/>
-            <img src={whats} alt="" className={cls.iconItem}/>
+            <img src={fb} alt="" className={cls.iconItem} />
+            <img src={inst} alt="" className={cls.iconItem} />
+            <img src={lin} alt="" className={cls.iconItem} />
+            <img src={teleg} alt="" className={cls.iconItem} />
+            <img src={whats} alt="" className={cls.iconItem} />
           </div>
         </div>
       </div>
