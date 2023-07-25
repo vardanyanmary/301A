@@ -1,0 +1,108 @@
+.Contact {
+    font-family: 'Montserrat';
+    max-width: 1920px;
+    width: 100%;
+    box-shadow: 0px 0px 16px rgba(49, 58, 75, 0.11);
+}
+
+.topLine {
+    display: flex;
+    max-width: 1925px;
+    width: 100%;
+}
+
+.title {
+    max-width: 1925px;
+    width: 100%;
+    box-shadow: 0px 0px 16px rgba(49, 58, 75, 0.11);
+}
+
+.write {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    color: #151C26;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 87px 0;
+}
+
+.contactPart {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 60px;
+
+    span {
+        color: #121212;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 31px;
+    }
+
+    .input {
+        max-width: 440px;
+        width: 100%;
+        height: 50px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.14);
+        box-shadow: -20px 8px 20px 0px rgba(21, 29, 39, 0.06);
+        color: #303030;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .textarea {
+        width: 470px;
+        height: 133px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.14);
+        box-shadow: -20px 8px 20px 0px rgba(21, 29, 39, 0.06);
+        color: #303030;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    button {
+        width: 245px;
+        height: 50px;
+        border-radius: 46px;
+        background: #DD264E;
+        box-shadow: -21px 16px 38px 0px rgba(191, 9, 48, 0.21);
+        border: none;
+        margin-top: 5px;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.massage {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameMail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.nameMailPart {
+    max-width: 1080px;
+    width: 100%;
+}
+
+.send {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button {
+        margin-left: auto;
+    }
+}

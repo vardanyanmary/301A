@@ -1,0 +1,80 @@
+.Donors {
+    max-width: 1080px;
+    width: 95%;
+    text-align: justify;
+    line-height: 31px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 55px;
+
+    p {
+        max-width: 624px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 31px;
+        padding-left: 25px;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    img {
+        margin-right: 5px;
+    }
+}
+
+
+.buttonsDiv {
+    display: flex;
+    margin-left: 25px;
+
+    .buttonMore {
+        max-width: 245px;
+        width: 100%;
+        border-radius: 46px;
+        background-color: #FFF;
+        padding: 15px;
+        border: 1px solid #C12DD9;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .buttonConnect {
+        font-size: 18px;
+        font-weight: 700;
+        max-width: 245px;
+        width: 100%;
+        border-radius: 46px;
+        padding: 15px;
+        margin-right: 10px;
+        border: none;
+        color: #FFF;
+        background: #C12DD9;
+        box-shadow: -21px 16px 38px 0px rgba(193, 45, 217, 0.32);
+    }
+}
+
+.partners {
+    max-width: 1080px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+}
+
+.partnersIcons {
+    max-width: 222px;
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin: 0 5px;
+}

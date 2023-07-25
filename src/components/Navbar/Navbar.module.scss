@@ -10,6 +10,10 @@
     font-family: 'Montserrat';
     box-sizing: border-box;
     box-shadow: -6px 6px 16px rgba(8, 31, 66, 0.11);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #FFF;
 }
 
 .img301 {

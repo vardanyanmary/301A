@@ -5,7 +5,7 @@ export const Mission = () => {
   return (
     <>
       <section className={cls.Mission}>
-        <img src="" alt="" />
+        {/* <img src="" alt="" /> */}
 
         <div>
           <div>

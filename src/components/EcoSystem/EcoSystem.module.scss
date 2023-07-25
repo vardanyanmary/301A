@@ -1,0 +1,40 @@
+.EcoSystem {
+    font-family: 'Montserrat';
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.topLine {
+    display: flex;
+    max-width: 1925px;
+    width: 100%;
+}
+
+.ecosystemContent {
+    max-width: 1080px;
+    width: 95%;
+    text-align: justify;
+    line-height: 31px;
+    margin: 0 auto;
+    color: #151C26;
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.title {
+    margin-left: -15px;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.ecoDiv {
+    height: 120px;
+}

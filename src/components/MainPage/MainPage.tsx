@@ -2,6 +2,11 @@ import cls from "./MainPage.module.scss";
 import { Navbar } from "../Navbar/Navbar";
 import { Home } from "../Home/Home";
 import { Mission } from "../Mission/Mission";
+import { Important } from "../Important/Important";
+import { Hypotheses } from "../Hypotheses/Hypotheses";
+import { EcoSystem } from "../EcoSystem/EcoSystem";
+import { Contact } from "../Contact/Contact";
+import { Footer } from "../Footer/Footer";
 
 export const MainPage = () => {
   return (
@@ -9,6 +14,13 @@ export const MainPage = () => {
       <Navbar />
       <Home />
       <Mission />
+      <Important />
+      <Hypotheses />
+      {/* Our projects */}
+      <EcoSystem />
+      {/* News */}
+      <Contact />
+      <Footer />
     </section>
   );
 };

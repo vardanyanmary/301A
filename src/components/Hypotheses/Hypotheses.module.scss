@@ -1,0 +1,89 @@
+.Hypotheses {
+    font-family: 'Montserrat';
+    max-width: 1920px;
+    width: 100%;
+    max-height: 900px;
+    height: 100%;
+}
+
+.hypothesesContent {
+    max-width: 1080px;
+    width: 95%;
+    text-align: justify;
+    line-height: 31px;
+    margin: 0 auto;
+    color: #151C26;
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.topLine {
+    display: flex;
+    max-width: 1925px;
+    width: 100%;
+}
+
+.title {
+    margin-left: -15px;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.hypothesesBgImg {
+    max-width: 1925px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../shared/assets/image498.jpg');
+}
+
+.hypothesesDescription {
+    max-width: 1090px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+
+    .buttonsDiv {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            max-width: 365px;
+            width: 100%;
+            max-height: 84px;
+            height: 100%;
+            padding: 25px;
+            background-color: #FFF;
+            color: #313A4B;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-radius: 45px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #DD264E;
+            color: #FFF
+        }
+    }
+
+    .pDiv {
+        color: #FFF;
+        max-width: 637px;
+        width: 100%;
+        max-height: 620px;
+        width: 100%;
+        text-align: justify;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 31px;
+        margin: 0;
+    }
+}
