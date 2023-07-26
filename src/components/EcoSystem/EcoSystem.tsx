@@ -4,10 +4,10 @@ import ecoIcon from "../../shared/assets/Group 5785.svg";
 import { Sages } from "./Sages/Sages";
 import { Donors } from "./Donors/Donors";
 import { Ambassadors } from "./Ambassadors/Ambassadors";
-import { Volontures } from "./Volontures/Volontures";
 import { Experts } from "./Experts/Experts";
 import { Partners } from "./Partners/Partners";
 import { CompainFriends } from "./CompainFriends/CompainFriends";
+import { Volunteers } from "./Volunteers/Volunteers";
 
 export const EcoSystem = () => {
   return (
@@ -41,7 +41,7 @@ export const EcoSystem = () => {
       <div className={cls.ecoDiv}></div>
       <Ambassadors />
       <div className={cls.ecoDiv}></div>
-      <Volontures />
+      <Volunteers />
       <div className={cls.ecoDiv}></div>
       <Experts />
       <div className={cls.ecoDiv}></div>

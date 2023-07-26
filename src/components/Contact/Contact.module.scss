@@ -21,10 +21,11 @@
     max-width: 1080px;
     width: 100%;
     margin: 0 auto;
-    color: #151C26;
-    font-size: 36px;
+    color: var(--eigengrau-color);
+    font-size: 34px;
     font-weight: 700;
-    padding: 87px 0;
+    padding: 75px 0;
+    display: flex;
 }
 
 .contactPart {
@@ -32,7 +33,7 @@
     width: 100%;
     margin: 0 auto;
     display: flex;
-    padding: 60px;
+    padding: 75px;
 
     span {
         color: #121212;
@@ -44,7 +45,7 @@
     .input {
         max-width: 440px;
         width: 100%;
-        height: 50px;
+        height: 45px;
         padding-left: 10px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 0, 0.14);
@@ -56,7 +57,12 @@
 
     .textarea {
         width: 470px;
-        height: 133px;
+        min-width: 300px;
+        max-width: 470px;
+        height: 140px;
+        min-height:  140px;
+        max-height: 230px;
+        padding: 10px;
         padding: 10px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 0, 0.14);
@@ -64,13 +70,15 @@
         color: #303030;
         font-size: 20px;
         font-weight: 500;
+        box-sizing: border-box;
+        overflow: auto;
     }
 
     button {
         width: 245px;
         height: 50px;
         border-radius: 46px;
-        background: #DD264E;
+        background: var(--hexadecimal-color);
         box-shadow: -21px 16px 38px 0px rgba(191, 9, 48, 0.21);
         border: none;
         margin-top: 5px;

@@ -61,7 +61,7 @@
     width: 100%;
 
     h2 {
-        color: #151C26;
+        color: var(--eigengrau-color);
         font-size: 46px;
         font-weight: 900;
         margin-bottom: 0;
@@ -85,7 +85,7 @@
         width: 245px;
         height: 50px;
         border-radius: 46px;
-        background: #DD264E;
+        background: var(--hexadecimal-color);
         color: #FFF;
         font-size: 18px;
         font-weight: 700;
@@ -96,9 +96,9 @@
         width: 245px;
         height: 50px;
         border-radius: 46px;
-        border: 2px solid #151C26;
+        border: 2px solid var(--eigengrau-color);
         background: rgba(255, 255, 255, 0.12);
-        color: #151C26;
+        color: var(--eigengrau-color);
         font-size: 18px;
         font-weight: 700;
         margin-left: 10px;
@@ -139,7 +139,7 @@
 .line {
     width: 1px;
     height: 50px;
-    background-color: #151C26;
+    background-color: var(--eigengrau-color);
     margin: 7px 0;
 }
 

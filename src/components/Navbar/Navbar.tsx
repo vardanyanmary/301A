@@ -15,8 +15,8 @@ export const Navbar = () => {
             </a>
           ))}
         </nav>
-        <span className={cls.eng}> ENG </span>
       </div>
+      <span className={cls.eng}> ENG </span>
 
       <button className={cls.signIn}>Sign in</button>
     </section>

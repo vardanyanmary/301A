@@ -1,0 +1,109 @@
+.swiper {
+  max-width: 1278px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  max-width: 38px;
+  max-height: 38px;
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 5;
+
+  @media (min-width: 1975px) {
+    display: none;
+  }
+}
+
+.nextSlide {
+  top: 30%;
+  right: -4%;
+  transform: rotate(180deg);
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.prevSlide {
+  top: 7%;
+  left: -55%;
+
+  @media (min-width: 1024px) {
+    display: none;
+
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .nextSlide,
+  .nextSlide {
+    display: none;
+  }
+}
+
+
+.prevIcon {
+  top: 10%;
+  left: -20%;
+  transform: rotate(90deg);
+}
+
+.nextIcon {
+  top: 44%;
+  right: 0;
+  transform: rotate(-90deg);
+
+}
+
+.nextIcon,
+.prevIcon {
+  background: var(--button-bg-gradient);
+}
+
+.prevCard {
+  top: 60%;
+  left: -72%;
+  transform: rotate(360deg);
+}
+
+.nextCard {
+  top: 50%;
+  right: -3%;
+  transform: rotate(-180deg);
+}
+
+.prevCard,
+.nextCard {
+  background: var(--button-bg-gradient);
+}
+
+
+.prevStep {
+  top: 0;
+  left: -20%;
+  transform: rotate(90deg);
+}
+
+.nextStep {
+  top: 42%;
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.prevStep,
+.nextStep {
+  background: var(--button-bg-gradient);
+}

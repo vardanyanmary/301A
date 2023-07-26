@@ -7,8 +7,8 @@
 }
 
 .importantContent {
-    max-width: 1080px;
-    width: 95%;
+    max-width: 1050px;
+    width: 100%;
     text-align: justify;
     line-height: 31px;
     margin: 0 auto;
@@ -27,7 +27,7 @@
     align-items: center;
 
     h2 {
-        color: #151C26;
+        color: var(--eigengrau-color);
     }
 
     img {

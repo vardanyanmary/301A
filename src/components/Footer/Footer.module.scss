@@ -4,10 +4,12 @@
 }
 
 .Footer {
+    position: relative;
     font-family: 'Montserrat';
     background-color: #151D27;
     max-width: 1920px;
     width: 100%;
+    height: 360px;
 }
 
 .followUs {
@@ -24,7 +26,6 @@
     width: 1px;
     height: 50px;
     background-color: #FFF;
-    ;
     margin: 7px 0;
 }
 
@@ -50,7 +51,7 @@
 }
 
 .footerDiv {
-    max-width: 1080px;
+    max-width: 1200px;
     width: 100%;
     padding: 20px;
     display: flex;
@@ -69,6 +70,28 @@
     font-weight: 500;
 }
 
-.infoAbout{
+.infoAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 25px;
+
+    img {
+        margin-right: 5px;
+    }
+}
+
+.footerBottomPart {
+    max-width: 1920px;
+    width: 100%;
+    height: 77px;
+    background-color: #C0C0C0;
+}
+
+.img301 {
+    max-height: 400px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    box-sizing: border-box;
 }

@@ -1,9 +1,8 @@
+import { contactData } from "../../constants/contactData";
 import { ourEcoSystem2Titles } from "../../constants/ecoSystem2Titles";
 import { ourEcoSystemTitles } from "../../constants/ecoSystemTitles";
 import { socialIconsLight } from "../../constants/socialData";
-import location from "../../shared/assets/ELEMENTS.svg";
-import phone from "../../shared/assets/Group.svg";
-import letter from "../../shared/assets/Vector (17).svg";
+import img301 from "../../shared/assets/AA 4 (1) (1).png";
 import cls from "./Footer.module.scss";
 
 export const Footer = () => {
@@ -29,18 +28,12 @@ export const Footer = () => {
           )}
         </div>
         <div className={cls.infoAbout}>
-          <div>
-            <img src={location} alt="" />
-            <span>Ереван, ул. Московяна 24</span>
-          </div>
-          <div>
-            <img src={phone} alt="" />
-            <span>+374 567890</span>
-          </div>
-          <div>
-            <img src={letter} alt="" />
-            <span>301@loftpineapple.com</span>
-          </div>
+          {contactData.map((item, index) => (
+            <div key={index}>
+              <img src={item.icon} alt="" />
+              <span>{item.text}</span>
+            </div>
+          ))}
         </div>
         <div className={cls.socialMedia}>
           <span className={cls.followUs}> Follow Us </span>
@@ -56,7 +49,9 @@ export const Footer = () => {
             ))}
           </div>
         </div>
+        <img src={img301} alt="" className={cls.img301} />
       </div>
+      <div className={cls.footerBottomPart}></div>
     </section>
   );
 };

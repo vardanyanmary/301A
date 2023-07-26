@@ -1,11 +1,11 @@
-import cls from "./Volontures.module.scss";
+import cls from "./Volunteers.module.scss";
 import checkList from "../../../shared/assets/Group 5856.svg";
-import volontures from "../../../shared/assets/Волонтеры.svg";
+import volunteers from "../../../shared/assets/Волонтеры.svg";
 
-export const Volontures = () => {
+export const Volunteers = () => {
   return (
-    <section className={cls.Volontures}>
-      <img src={volontures} alt="" />
+    <section className={cls.Volunteers}>
+      <img src={volunteers} alt="" />
       <div>
         <div className={cls.title}>
           <img src={checkList} alt="" />
