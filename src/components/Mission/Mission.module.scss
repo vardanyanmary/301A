@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #313A4B;
+    color: var(--dark-bluish-color);
 
     h3 {
         padding-left: 15px;
@@ -23,6 +23,7 @@
         padding-left: 15px;
         text-align: justify;
     }
+
     img {
         margin-right: 10px;
     }
@@ -41,9 +42,9 @@
     padding: 15px;
     border-radius: 46px;
     border: 2px solid var(--hexadecimal-color);
-    color: #313A4B;
+    color: var(--dark-bluish-color);
     font-size: 18px;
     font-weight: 700;
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--button-more-color);
     margin-bottom: 25px;
 }

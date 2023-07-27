@@ -36,9 +36,9 @@
         max-width: 245px;
         width: 100%;
         border-radius: 46px;
-        background-color: #FFF;
+        background-color: var(--white-color);
         padding: 15px;
-        border: 1px solid #189387;
+        border: 1px solid var(--button-blue-color);
         font-size: 18px;
         font-weight: 700;
     }
@@ -50,10 +50,10 @@
         width: 100%;
         border-radius: 46px;
         padding: 15px;
-        background: #189387;
+        background: var(--button-blue-color);
         margin-right: 10px;
         border: none;
         box-shadow: -21px 16px 38px 0px rgba(24, 147, 135, 0.38);
-        color: #FFF;
+        color: var(--white-color);
     }
 }

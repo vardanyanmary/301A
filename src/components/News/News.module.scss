@@ -20,7 +20,7 @@
 .title {
     max-width: 1925px;
     width: 100%;
-    box-shadow: 0px 0px 16px rgba(49, 58, 75, 0.11);
+    box-shadow: var(--item-shadow);
 }
 
 .write {
@@ -51,8 +51,8 @@
     font-size: 18px;
     font-weight: 700;
     border-radius: 46px;
-    background-color: #FFF;
+    background-color: var(--white-color);
     border: 1px solid var(--hexadecimal-color);
-    box-shadow: -21px 16px 38px 0px rgba(191, 9, 48, 0.21);
+    box-shadow: var(--button-shadow);
     margin-top: 25px;
 }
