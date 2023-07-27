@@ -8,6 +8,7 @@ import { NewsItem } from "./NewsItem/NewsItem";
 import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
 import { BREAKPOINTS } from "../../constants/breakpoints";
 import SwiperComponent from "../../shared/ui/Swiper/Swiper";
+import styleImg from "../../shared/assets/Vector (18).svg";
 
 export const News = () => {
   return (
@@ -15,12 +16,15 @@ export const News = () => {
       <div className={cls.topLine}>
         <img src={topLine} alt="topLine" className={cls.topLine} />
       </div>
+
+
       <div className={cls.title}>
         <div className={cls.write}>
           <img src={list} alt="" />
           <span>Новости "301"</span>
         </div>
       </div>
+      <img src={styleImg} alt="" className={cls.styleImg} />
       <div className={cls.newsDiv}>
         <div className={cls.newsItems}>
           <SwiperComponent

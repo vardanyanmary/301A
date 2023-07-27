@@ -1,7 +1,7 @@
 .News {
+    position: relative;
     max-width: 1925px;
     width: 100%;
-    font-family: 'Montserrat';
     box-sizing: border-box;
 }
 
@@ -35,12 +35,14 @@
 
 .newsDiv {
     max-width: 1080px;
+    height:485px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     flex-direction: column;
     padding: 50px;
+    margin-top: 50px;
 }
 
 .newsButton {
@@ -55,4 +57,21 @@
     border: 1px solid var(--hexadecimal-color);
     box-shadow: var(--button-shadow);
     margin-top: 25px;
+}
+
+//-----------------------------
+
+.styleImg {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    max-width: 230px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    padding: 15px;
+    opacity: 0.5;
+    @media (max-width:1480px) {
+        display: none;
+    }
 }

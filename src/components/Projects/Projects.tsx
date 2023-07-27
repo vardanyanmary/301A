@@ -8,6 +8,7 @@ import { BREAKPOINTS } from "../../constants/breakpoints";
 import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
 import right from "../../shared/assets/Group 5998.svg";
 import left from "../../shared/assets/Group 5998.svg";
+import firstImg from "../../shared/assets/Vector (2).svg";
 
 export const Projects = () => {
   return (
@@ -15,6 +16,10 @@ export const Projects = () => {
       <div className={cls.topLine}>
         <img src={topLine} alt="topLine" className={cls.topLine} />
       </div>
+      <div className={cls.imagesDiv}>
+          <img src={firstImg} alt="" className={cls.firstImg} />
+          <img src={firstImg} alt="" className={cls.firstImg} />
+        </div>
       <div className={cls.projectsContent}>
         <div className={cls.title}>
           <img src={projectsIcon} alt="" />

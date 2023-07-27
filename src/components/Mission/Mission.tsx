@@ -1,15 +1,21 @@
 import cls from "./Mission.module.scss";
 import mission from "../../shared/assets/Group 5758.svg";
+import firstImg from "../../shared/assets/6.svg";
+import secondImg from "../../shared/assets/7.svg";
 
 export const Mission = () => {
   return (
     <>
       <section className={cls.Mission}>
-        {/* <img src="" alt="" /> */}
+        <div className={cls.imagesDiv}>
+          <img src={firstImg} alt="" className={cls.firstImg} />
+          <img src={secondImg} alt="" className={cls.secondImg} />
+          <img src={firstImg} alt="" className={cls.firstImg} />
+        </div>
 
         <div>
           <div>
-            <div>
+            <div className={cls.contentText}>
               <div className={cls.missionImg}>
                 <img src={mission} alt="mission" />
                 <h2>НАША МИССИЯ</h2>

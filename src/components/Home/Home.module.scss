@@ -4,10 +4,9 @@
 }
 
 .Home {
-    // position: relative;
+    position: relative;
     max-width: 1920px;
     width: 100%;
-    font-family: 'Montserrat';
     margin: 0 auto;
     padding-top:106px;
 }
@@ -17,44 +16,6 @@
     width: 100%;
 }
 
-// .imagesDiv {
-//     max-width: 1920px;
-//     width: 100%;
-//     max-height: 785px;
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     @include flexCenter();
-//     justify-content: space-between;
-//     padding: 15px;
-//     box-sizing: border-box;
-// }
-
-// .firstImg {
-//     max-width: 134px;
-//     width: 100%;
-//     max-height: 134px;
-//     height: 100%;
-//     transform: rotate(90deg);
-// }
-
-// .secondImg {
-//     max-width: 650px;
-//     width: 100%;
-//     max-height: 650px;
-//     height: 100%;
-// }
-
-// .romb {
-//     max-width: 1235px;
-//     width: 100%;
-//     max-height: 785px;
-//     height: 100%;
-//     @include flexCenter();
-//     justify-content: center;
-// }
 
 .content {
     max-width: 1095px;
@@ -80,7 +41,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding-bottom: 33px;
-
+    
     .be {
         width: 245px;
         height: 50px;
@@ -91,7 +52,7 @@
         font-weight: 700;
         border: none;
     }
-
+    
     .all {
         width: 245px;
         height: 50px;
@@ -106,15 +67,29 @@
 }
 
 .contentImgTexts {
-    max-width: 1095px;
+    max-width: 1020px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
-    padding: 20px;
     box-sizing: border-box;
     z-index: 1;
+    position: absolute;
+    top: 25%; 
+    left: 20%;
+    @media (max-width:1340px) {
+        top: 25%; 
+        left: 10%;
+    }
+    @media (max-width:1270px) {
+        top: 25%; 
+        left: 5%;
+    }
+
+    @media (max-width:1270px) {
+        top: 25%; 
+        left: 5%;
+    }
 }
 
 .img301 {
@@ -126,6 +101,9 @@
 .socialMedia {
     @include flexCenter();
     flex-direction: column;
+    @media (max-width:1200px) {
+        display: none;
+    }
 }
 
 .followUs {
@@ -157,6 +135,53 @@
     height: 15px;
 }
 
-button {
-    cursor: pointer;
+
+//------------------------------------
+
+.imagesDiv {
+    max-width: 1880px;
+    width: 90%;
+    max-height: 785px;
+    height: 100%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flexCenter();
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.firstImg {
+    max-width: 134px;
+    width: 100%;
+    max-height: 134px;
+    height: 100%;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    @media (max-width:1340px) {
+        display: none;
+    }
+}
+
+
+.secondImg {
+    max-width: 650px;
+    width: 100%;
+    max-height: 650px;
+    height: 100%;
+    opacity: 0.5;
+    @media (max-width:1340px) {
+        margin: 0 auto;
+    }
+}
+
+.romb {
+    max-width: 1235px;
+    width: 100%;
+    max-height: 785px;
+    height: 100%;
+    @include flexCenter();
+    justify-content: center;
 }

@@ -1,7 +1,7 @@
 .Projects {
-    font-family: 'Montserrat';
+    position: relative;
     max-width: 1920px;
-    width: 100%;
+    width: 95%;
     max-height: 900px;
     height: 100%;
     margin-bottom: 25px;
@@ -28,7 +28,6 @@
 }
 
 .title {
-    margin-left: -15px;
     display: flex;
     align-items: center;
 
@@ -41,6 +40,10 @@
     max-width: 1080px;
     width: 100%;
     margin: 0 auto;
+    @media (max-width:1340px) {
+        padding-left: 27px;
+        margin: 0 auto;
+    }
 }
 
 .projectButton {
@@ -57,4 +60,34 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+//------------------------------------
+
+.imagesDiv {
+    max-width: 1880px;
+    width: 95%;
+    max-height: 785px;
+    height: 100%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.firstImg {
+    max-width: 114px;
+    width: 100%;
+    max-height: 114px;
+    height: 100%;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    @media (max-width:1340px) {
+        display: none;
+    }
 }

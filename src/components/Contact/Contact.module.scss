@@ -1,5 +1,5 @@
 .Contact {
-    font-family: 'Montserrat';
+    position: relative;
     max-width: 1920px;
     width: 100%;
     box-shadow: var(--item-shadow);
@@ -18,22 +18,22 @@
 }
 
 .write {
-    max-width: 1080px;
+    max-width: 1020px;
     width: 100%;
     margin: 0 auto;
     color: var(--eigengrau-color);
     font-size: 34px;
     font-weight: 700;
-    padding: 75px 0;
+    padding: 65px 0;
     display: flex;
 }
 
 .contactPart {
-    max-width: 1080px;
+    max-width: 1020px;
     width: 100%;
     margin: 0 auto;
     display: flex;
-    padding: 75px;
+    padding: 80px;
 
     span {
         color: #121212;
@@ -42,21 +42,8 @@
         line-height: 31px;
     }
 
-    .input {
-        max-width: 440px;
-        width: 100%;
-        height: 45px;
-        padding-left: 10px;
-        border-radius: 10px;
-        border: 2px solid rgba(0, 0, 0, 0.14);
-        box-shadow: var(--input-textarea-shadow);
-        color: var(--input-textarea-color);
-        font-size: 20px;
-        font-weight: 500;
-    }
-
     .textarea {
-        width: 470px;
+        width: 450px;
         min-width: 300px;
         max-width: 470px;
         height: 140px;
@@ -74,7 +61,7 @@
         overflow: auto;
     }
 
-    button {
+    .contactButton {
         width: 245px;
         height: 50px;
         border-radius: 46px;
@@ -82,9 +69,18 @@
         box-shadow: var(--button-shadow);
         border: none;
         margin-top: 5px;
+        margin-left: 0;
         color: var(--white-color);
         font-size: 18px;
         font-weight: 700;
+    }
+
+    @media (max-width:1280px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }
 
@@ -97,6 +93,27 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+
+    .input {
+        max-width: 420px;
+        width: 100%;
+        height: 45px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.14);
+        box-shadow: var(--input-textarea-shadow);
+        color: var(--input-textarea-color);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    @media (max-width:1280px) {
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
 }
 
 .nameMailPart {
@@ -112,5 +129,23 @@
 
     button {
         margin-left: auto;
+    }
+}
+
+//---------------------------------
+
+.styleImg {
+    position: absolute;
+    top: 65%;
+    right: 8%;
+    max-width: 170px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    padding: 15px;
+    opacity: 0.6;
+
+    @media (max-width:1480px) {
+        display: none;
     }
 }

@@ -3,6 +3,7 @@ import { ourEcoSystem2Titles } from "../../constants/ecoSystem2Titles";
 import { ourEcoSystemTitles } from "../../constants/ecoSystemTitles";
 import { socialIconsLight } from "../../constants/socialData";
 import img301 from "../../shared/assets/AA 4 (1) (1).png";
+// import firstImg from "../../shared/assets/Vector (2).svg";
 import cls from "./Footer.module.scss";
 
 export const Footer = () => {

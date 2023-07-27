@@ -1,1 +1,10 @@
 @import "./variables/global.scss";
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}

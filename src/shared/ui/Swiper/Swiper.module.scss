@@ -75,14 +75,18 @@
 
 .prevCard {
   top: 60%;
-  left: -72%;
+  left: -39%;
   transform: rotate(360deg);
 }
 
 .nextCard {
   top: 50%;
-  right: -3%;
+  right: -1%;
   transform: rotate(-180deg);
+
+  @media (max-width:765px) {
+    right:-2%;
+  }
 }
 
 .prevCard,

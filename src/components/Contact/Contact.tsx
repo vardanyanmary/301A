@@ -1,6 +1,7 @@
 import cls from "./Contact.module.scss";
 import topLine from "../../shared/assets/Group 6008.svg";
 import write from "../../shared/assets/Напишите нам.svg";
+import styleImg from "../../shared/assets/Vector (19).svg";
 
 export const Contact = () => {
   return (
@@ -30,10 +31,11 @@ export const Contact = () => {
           <div className={cls.massage}>
             <span>Сообщение</span>
             <textarea placeholder="Написать" className={cls.textarea} />
+            <button className={cls.contactButton}>Send</button>
           </div>
-          <button>Send</button>
         </div>
       </div>
+      <img src={styleImg} alt="" className={cls.styleImg} />
     </section>
   );
 };
