@@ -5,7 +5,7 @@ import donorImg from "../../../shared/assets/Group 6017.svg";
 export const Donors = () => {
   return (
     <section className={cls.Donors}>
-      <img src={donorImg} alt="" />
+      <img src={donorImg} alt="" className={cls.donors}/>
       <div>
         <div className={cls.title}>
           <img src={portfolio} alt="" />

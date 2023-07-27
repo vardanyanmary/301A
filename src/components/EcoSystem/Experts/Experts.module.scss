@@ -9,7 +9,7 @@
 
     p {
         max-width: 624px;
-        width: 100%;
+        width: 95%;
         font-size: 20px;
         font-weight: 500;
         line-height: 31px;
@@ -39,4 +39,10 @@
     color: var(--white-color);
     background: #42CFEE;
     box-shadow: -21px 16px 38px 0px rgba(66, 207, 238, 0.36);
+}
+
+.experts{
+    max-width: 405px;
+    max-height: 384px;
+    margin-top: 25px;
 }

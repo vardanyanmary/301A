@@ -19,7 +19,7 @@ export const Experts = () => {
         </p>
         <button className={cls.buttonBe}>Стать экспертом </button>
       </div>
-      <img src={experts} alt="" />
+      <img src={experts} alt="" className={cls.experts}/>
     </section>
   );
 };

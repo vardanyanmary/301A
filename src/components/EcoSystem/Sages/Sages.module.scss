@@ -8,7 +8,7 @@
 
     p {
         max-width: 624px;
-        width: 100%;
+        width: 95%;
         font-size: 20px;
         font-weight: 500;
         line-height: 31px;
@@ -35,4 +35,10 @@
     border: 1px solid var(--hexadecimal-color);
     font-size: 18px;
     font-weight: 700;
+}
+
+.sages{
+    max-width: 405px;
+    max-height: 384px;
+    margin-top: 45px;
 }

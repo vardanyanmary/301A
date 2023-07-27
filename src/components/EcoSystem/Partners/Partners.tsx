@@ -7,7 +7,7 @@ export const Partners = () => {
   return (
     <section>
       <div className={cls.Donors}>
-        <img src={partnerImg} alt="" />
+        <img src={partnerImg} alt="" className={cls.partnersImg}/>
         <div>
           <div className={cls.title}>
             <img src={hands} alt="" />

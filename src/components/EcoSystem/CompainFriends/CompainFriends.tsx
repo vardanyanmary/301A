@@ -17,7 +17,7 @@ export const CompainFriends = () => {
         <p>Чужих не бывает.</p>
         <button className={cls.buttonBe}> Стать другом фонда </button>
       </div>
-      <img src={friends} alt="" />
+      <img src={friends} alt="" className={cls.friends}/>
     </section>
   );
 };

@@ -11,7 +11,7 @@ export const Contact = () => {
       </div>
       <div className={cls.title}>
         <div className={cls.write}>
-          <img src={write} alt="" />
+          <img src={write} alt="" className={cls.letter}/>
           <span>Напишите нам</span>
         </div>
       </div>

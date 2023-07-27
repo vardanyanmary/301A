@@ -3,6 +3,7 @@
     max-width: 1920px;
     width: 100%;
     box-shadow: var(--item-shadow);
+    box-sizing: border-box;
 }
 
 .topLine {
@@ -28,18 +29,42 @@
     display: flex;
 }
 
+@media (max-width: 1280px) {
+    .write {
+        display: flex;
+        align-items: center;
+        font-size: 19px;
+        padding-left: 25px;
+        margin: 0 auto;
+        padding: 35px;
+    }
+
+    .letter {
+        width: 27px;
+        height: 21px;
+        padding-right: 10px;
+    }
+}
+
 .contactPart {
     max-width: 1020px;
     width: 100%;
     margin: 0 auto;
     display: flex;
-    padding: 80px;
+    padding: 80px 0;
 
     span {
         color: #121212;
         font-size: 20px;
         font-weight: 500;
         line-height: 31px;
+
+        @media (max-width:490px) {
+            max-width: 280px;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+        }
     }
 
     .textarea {
@@ -59,6 +84,11 @@
         font-weight: 500;
         box-sizing: border-box;
         overflow: auto;
+
+        @media (max-width:490px) {
+            max-width: 232px;
+            max-height: 143px;
+        }
     }
 
     .contactButton {
@@ -74,8 +104,21 @@
         font-size: 18px;
         font-weight: 700;
     }
+}
 
-    @media (max-width:1280px) {
+@media (max-width: 1280px) {
+    .contactPart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactPart {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -105,20 +148,35 @@
         color: var(--input-textarea-color);
         font-size: 20px;
         font-weight: 500;
+
+        @media (max-width:490px) {
+            max-width: 280px;
+            width: 100%;
+            max-height: 46px;
+            display: flex;
+            margin: 0 auto;
+        }
     }
+
+    @media (max-width:490px) {
+        max-width: 440px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+}
+
+.nameMailPart {
+    max-width: 1080px;
+    width: 100%;
 
     @media (max-width:1280px) {
         width: 440px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-
     }
-}
-
-.nameMailPart {
-    max-width: 1080px;
-    width: 100%;
 }
 
 .send {
@@ -131,8 +189,6 @@
         margin-left: auto;
     }
 }
-
-//---------------------------------
 
 .styleImg {
     position: absolute;

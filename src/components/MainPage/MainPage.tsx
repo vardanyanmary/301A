@@ -13,16 +13,16 @@ import { Footer } from "../Footer/Footer";
 export const MainPage = () => {
   return (
     <section className={cls.MainPage}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
-      <Mission />
-      <Important />
-      <Hypotheses />
-      <Projects />
-      <EcoSystem />
-      <News />
-      <Contact />
-      <Footer />
+      {/* <Mission /> */}
+      {/* <Important /> */}
+      {/* <Hypotheses />   // sra buttonnery poqracneluc sarqel select */}
+      {/* <Projects /> */}
+      {/* <EcoSystem /> */}
+      {/* <News /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </section>
   );
 };

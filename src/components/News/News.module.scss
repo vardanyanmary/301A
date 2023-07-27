@@ -24,13 +24,14 @@
 }
 
 .write {
-    max-width: 1080px;
-    width: 100%;
+    max-width: 1065px;
+    width: 90%;
     margin: 0 auto;
     color: var(--eigengrau-color);
     font-size: 36px;
     font-weight: 700;
     padding: 45px 0;
+    padding-left: 15px;
 }
 
 .newsDiv {
@@ -67,10 +68,10 @@
     left: 8%;
     max-width: 230px;
     width: 100%;
-    max-height: 200px;
+    max-height: 250px;
     height: 100%;
     padding: 15px;
-    opacity: 0.5;
+    opacity: 1;
     @media (max-width:1480px) {
         display: none;
     }

@@ -5,7 +5,7 @@ import volunteers from "../../../shared/assets/Волонтеры.svg";
 export const Volunteers = () => {
   return (
     <section className={cls.Volunteers}>
-      <img src={volunteers} alt="" />
+      <img src={volunteers} alt="" className={cls.volunteers}/>
       <div>
         <div className={cls.title}>
           <img src={checkList} alt="" />

@@ -22,7 +22,7 @@ export const Sages = () => {
         </p>
         <button className={cls.buttonMore}>Узнать больше</button>
       </div>
-      <img src={sagesImg} alt="" />
+      <img src={sagesImg} alt="" className={cls.sages}/>
     </section>
   );
 };

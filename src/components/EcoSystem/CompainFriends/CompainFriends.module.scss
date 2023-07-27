@@ -9,7 +9,7 @@
 
     p {
         max-width: 624px;
-        width: 100%;
+        width: 95%;
         font-size: 20px;
         font-weight: 500;
         line-height: 31px;
@@ -39,4 +39,10 @@
     color: var(--white-color);
     background: #6442EE;
     box-shadow: -21px 16px 38px 0px rgba(100, 66, 238, 0.37)
+}
+
+.friends{
+    max-width: 400px;
+    max-height: 374px;
+    margin-top: 15px;
 }
