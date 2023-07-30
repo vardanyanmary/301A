@@ -13,7 +13,7 @@ export const MainPage = () => {
   return (
     <section>
       <Navbar />
-      {/* <Home /> */}
+      <Home />
       <Mission />
       <Important />
       <Hypotheses />
