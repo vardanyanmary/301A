@@ -9,6 +9,7 @@
     max-width: 1920px;
     width: 100%;
     height: 360px;
+    height: 100%;
 }
 
 .followUs {
@@ -31,8 +32,9 @@
 .icons {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 
-    justify-content: space-evenly img {
+    img {
         margin-bottom: 3px;
     }
 }
@@ -68,6 +70,10 @@
     font-weight: 500;
 }
 
+.ourEcoSystem {
+    margin-right: 45px;
+}
+
 .infoAbout {
     display: flex;
     flex-direction: column;
@@ -95,11 +101,109 @@
 
     @media (max-width:1280px) {
         max-height: 400px;
-        height: 60%;
-        width: 40%;
         position: absolute;
         top: 27%;
         left: 45%;
+        box-sizing: border-box;
+    }
+
+    @media (max-width:860px) {
+        max-height: 140px;
+        height: 63%;
+        width: 30%;
+        top: 73%;
+        left: 33%;
+    }
+
+    @media (max-width:560px) {
+        max-height: 140px;
+        height: 63%;
+        width: 45%;
+    }
+}
+
+.systems {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:860px) {
+    .footerDiv {
+        max-width: 596px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .infoAbout {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .socialMedia {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .followUs,
+    .line {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 55px;
+        padding-left: 45px;
+
+        img {
+            margin-bottom: 3px;
+        }
+    }
+
+    .iconItem {
+        width: 25px;
+        height: 25px;
+        fill: var(--white-color);
+        padding-left: 55px;
+    }
+
+    .footerBottomPart {
+        height: 80px;
+        background-color: #C0C0C0;
+    }
+}
+
+@media (max-width:550px) {
+    .icons {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 55px;
+    }
+
+    .iconItem {
+        padding-left: 0;
+        padding-right: 53px;
+    }
+
+    .systems{
+        padding-left:15px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 55px;
+        padding-left: 15px;
+    }
+
+    .infoAbout {
+        padding-left: 15px;
         box-sizing: border-box;
     }
 }

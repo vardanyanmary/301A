@@ -14,7 +14,7 @@ export const Mission = () => {
         </div>
 
         <div>
-          <div>
+          <div className={cls.contextImgText}>
             <div className={cls.contentText}>
               <div className={cls.missionImg}>
                 <img src={mission} alt="mission" />

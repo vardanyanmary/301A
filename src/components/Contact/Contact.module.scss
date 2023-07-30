@@ -27,6 +27,10 @@
     font-weight: 700;
     padding: 65px 0;
     display: flex;
+
+    @media (max-width:480px) {
+        padding: 0;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -37,12 +41,20 @@
         padding-left: 25px;
         margin: 0 auto;
         padding: 35px;
+        box-sizing: border-box;
     }
 
     .letter {
         width: 27px;
         height: 21px;
         padding-right: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .write {
+        padding: 25px 0 25px 25px;
+        box-sizing: border-box;
     }
 }
 
@@ -75,7 +87,6 @@
         min-height: 140px;
         max-height: 230px;
         padding: 10px;
-        padding: 10px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 0, 0.14);
         box-shadow: var(--input-textarea-shadow);
@@ -86,7 +97,7 @@
         overflow: auto;
 
         @media (max-width:490px) {
-            max-width: 232px;
+            max-width: 225px;
             max-height: 143px;
         }
     }
@@ -130,6 +141,15 @@
 .massage {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1280px) {
+        .contactButton {
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
 }
 
 .nameMail {
@@ -173,6 +193,13 @@
 
     @media (max-width:1280px) {
         width: 440px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    @media (max-width:480px) {
+        width: 340px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;

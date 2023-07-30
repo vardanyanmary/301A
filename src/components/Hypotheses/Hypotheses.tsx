@@ -22,6 +22,7 @@ export const Hypotheses = () => {
 
       <div className={cls.hypothesesBgImg}>
         <div className={cls.hypothesesDescription}>
+
           <div className={cls.buttonsDiv}>
             <button>страна мудрости</button>
             <button>страна остроумия</button>
@@ -29,6 +30,16 @@ export const Hypotheses = () => {
             <button>«Красная книга» древнейших культур</button>
             <button>сетевое государство</button>
           </div>
+
+          <select className={cls.buttonsDivSelect}>
+            <option className={cls.option}>страна мудрости</option>
+            <option className={cls.option}>страна остроумия</option>
+            <option className={cls.option}>страна креономики и сенсаномики</option>
+            <option className={cls.option}>«Красная книга» древнейших культур</option>
+            <option className={cls.option}>сетевое государство</option>
+          </select>
+
+
           <div className={cls.pDiv}>
             <p>
               Мы считаем, что мудрость лежит в основе существования армянского

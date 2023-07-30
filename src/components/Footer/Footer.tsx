@@ -10,23 +10,25 @@ export const Footer = () => {
   return (
     <section className={cls.Footer}>
       <div className={cls.footerDiv}>
-        <div className={cls.ourEcoSystem}>
-          {ourEcoSystemTitles.map((title, index) =>
-            index === 0 ? (
-              <h3 key={index}>{title}</h3>
-            ) : (
-              <span key={index}>{title}</span>
-            )
-          )}
-        </div>
-        <div className={cls.ourEcoSystem2}>
-          {ourEcoSystem2Titles.map((title, index) =>
-            index === 0 ? (
-              <h3 key={index}>{title}</h3>
-            ) : (
-              <span key={index}>{title}</span>
-            )
-          )}
+        <div className={cls.systems}>
+          <div className={cls.ourEcoSystem}>
+            {ourEcoSystemTitles.map((title, index) =>
+              index === 0 ? (
+                <h3 key={index}>{title}</h3>
+              ) : (
+                <span key={index}>{title}</span>
+              )
+            )}
+          </div>
+          <div className={cls.ourEcoSystem2}>
+            {ourEcoSystem2Titles.map((title, index) =>
+              index === 0 ? (
+                <h3 key={index}>{title}</h3>
+              ) : (
+                <span key={index}>{title}</span>
+              )
+            )}
+          </div>
         </div>
         <div className={cls.infoAbout}>
           {contactData.map((item, index) => (

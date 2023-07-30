@@ -10,14 +10,18 @@ export const CompainFriends = () => {
           <img src={friendIcon} alt="" />
           <h2>Друзья фонда</h2>
         </div>
-        <p>
-          Друзьями фонда являются все, кто помогает: ресурсами, временем,
-          поддержкой, идеями, и остается рядом. 
-        </p>
-        <p>Чужих не бывает.</p>
+        <div className={cls.content}>
+          <div>
+            <p>
+              Друзьями фонда являются все, кто помогает: ресурсами, временем,
+              поддержкой, идеями, и остается рядом. 
+            </p>
+            <p>Чужих не бывает.</p>
+          </div>
+          <img src={friends} alt="" className={cls.friends} />
+        </div>
         <button className={cls.buttonBe}> Стать другом фонда </button>
       </div>
-      <img src={friends} alt="" className={cls.friends}/>
     </section>
   );
 };

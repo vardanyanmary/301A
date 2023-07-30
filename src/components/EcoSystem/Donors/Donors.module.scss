@@ -1,6 +1,6 @@
 .Donors {
     max-width: 1080px;
-    width: 95%;
+    width: 90%;
     text-align: justify;
     line-height: 31px;
     margin: 0 auto;
@@ -14,16 +14,56 @@
         font-weight: 500;
         line-height: 31px;
         padding-left: 25px;
+
+        @media (max-width:900px) {
+            padding-left: 15px;
+        }
+
+        @media (max-width:480px) {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18.5px;
+            box-sizing: border-box;
+        }
+    }
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:900px) {
+        flex-direction: column;
     }
 }
 
 .title {
     display: flex;
     align-items: center;
-    margin: 0;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 35px;
 
     img {
         margin-right: 5px;
+    }
+
+    @media (max-width:900px) {
+        margin-left: 25px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 15px;
+
+    }
+
+    @media (max-width:480px) {
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+        }
     }
 }
 
@@ -31,6 +71,11 @@
     max-width: 415px;
     max-height: 391px;
     margin: 0;
+
+    @media (max-width:480px) {
+        max-width: 228px;
+        max-height: 197px;
+    }
 }
 
 .buttonsDiv {
@@ -46,6 +91,16 @@
         border: 1px solid var(--button-blue-color);
         font-size: 18px;
         font-weight: 700;
+
+        @media (max-width:560px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 218px;
+            max-height: 44px;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
     }
 
     .buttonConnect {
@@ -60,5 +115,29 @@
         border: none;
         box-shadow: -21px 16px 38px 0px rgba(24, 147, 135, 0.38);
         color: var(--white-color);
+
+        @media (max-width:560px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 218px;
+            max-height: 44px;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width:900px) {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    @media (max-width:560px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
     }
 }

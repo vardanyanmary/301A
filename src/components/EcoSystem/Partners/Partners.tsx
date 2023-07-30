@@ -7,21 +7,25 @@ export const Partners = () => {
   return (
     <section>
       <div className={cls.Donors}>
-        <img src={partnerImg} alt="" className={cls.partnersImg}/>
         <div>
           <div className={cls.title}>
             <img src={hands} alt="" />
             <h2>Партнеры</h2>
           </div>
-          <p>
-            Нашими партнерами являются различные организации, а также отдельные
-            личности, которые разделяют наши идеи. Наши партнеры поддерживают
-            проекты фонда и оказывают содействие и в их реализации, предоставляя
-            нам различные ресурсы. 
-          </p>
-          <div className={cls.buttonsDiv}>
-            <button className={cls.buttonConnect}>Стать партнером</button>
-            <button className={cls.buttonMore}>Все партнеры</button>
+          <div className={cls.content}>
+            <img src={partnerImg} alt="" className={cls.partnersImg} />
+            <div className={cls.contentImgTexts}>
+              <p>
+                Нашими партнерами являются различные организации, а также
+                отдельные личности, которые разделяют наши идеи. Наши партнеры
+                поддерживают проекты фонда и оказывают содействие и в их
+                реализации, предоставляя нам различные ресурсы. 
+              </p>
+              <div className={cls.buttonsDiv}>
+                <button className={cls.buttonConnect}>Стать партнером</button>
+                <button className={cls.buttonMore}>Все партнеры</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
