@@ -18,7 +18,7 @@ export const EcoSystem = () => {
       <div className={cls.ecosystemContent}>
         <div className={cls.title}>
           <img src={ecoIcon} alt="" />
-          <h2>ЭКОСИСТЕМА Клуб «301»</h2>
+          <h2>НАША ЭКОСИСТЕМА</h2>
         </div>
         <p>
           Мы видим два основный пути развития: с одной стороны — мудрое

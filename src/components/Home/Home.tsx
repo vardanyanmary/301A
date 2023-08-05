@@ -35,6 +35,7 @@ export const Home = () => {
               <button className={cls.be}>Стань одним из 301</button>
               <button className={cls.all}>Весь проект</button>
             </div>
+            <div className={cls.bottomPart}></div>
           </div>
 
           <img src={img301} alt="301" className={cls.img301} />
@@ -54,7 +55,6 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
         <img src={bottomStyle} alt="style" className={cls.styles} />
       </div>
     </section>

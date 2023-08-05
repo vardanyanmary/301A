@@ -16,7 +16,7 @@ export const Footer = () => {
               index === 0 ? (
                 <h3 key={index}>{title}</h3>
               ) : (
-                <span key={index}>{title}</span>
+                <p key={index}>{title}</p>
               )
             )}
           </div>
@@ -25,7 +25,7 @@ export const Footer = () => {
               index === 0 ? (
                 <h3 key={index}>{title}</h3>
               ) : (
-                <span key={index}>{title}</span>
+                <p key={index}>{title}</p>
               )
             )}
           </div>

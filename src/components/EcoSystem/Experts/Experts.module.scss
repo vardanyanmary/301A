@@ -38,15 +38,26 @@
     display: flex;
     align-items: center;
     margin: 0;
+    margin-bottom: -55px;
 
     img {
         margin-right: 5px;
     }
 
+    @media (max-width:900px) {
+        margin-bottom: -25px;
+    }
+
+
     @media (max-width:480px) {
         h2 {
             font-size: 18px;
             font-weight: 700;
+        }
+
+        img {
+            width: 32.001px;
+            height: 26.547px;
         }
     }
 }
@@ -71,16 +82,16 @@
         margin: 0 auto;
     }
 
-    @media (max-width:480px) {
+    @media (max-width:625px) {
         max-width: 218px;
         height: 44px;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 700;
         line-height: 18.5px;
     }
 }
 
-.experts{
+.experts {
     max-width: 415px;
     max-height: 315px;
     margin: 0;
@@ -90,6 +101,8 @@
     @media (max-width:480px) {
         max-width: 228.355px;
         max-height: 197.726px;
+        margin-left: auto;
+        margin-right: 30px;
     }
 }
 
@@ -98,6 +111,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: -35px;
 
     @media (max-width:900px) {
         flex-direction: column-reverse;

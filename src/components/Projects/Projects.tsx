@@ -17,9 +17,9 @@ export const Projects = () => {
         <img src={topLine} alt="topLine" className={cls.topLine} />
       </div>
       <div className={cls.imagesDiv}>
-          <img src={firstImg} alt="" className={cls.firstImg} />
-          <img src={firstImg} alt="" className={cls.firstImg} />
-        </div>
+        <img src={firstImg} alt="" className={cls.firstImg} />
+        <img src={firstImg} alt="" className={cls.firstImg} />
+      </div>
       <div className={cls.projectsContent}>
         <div className={cls.title}>
           <img src={projectsIcon} alt="" />
@@ -42,7 +42,23 @@ export const Projects = () => {
           prevClassName="prevCard"
         />
       </div>
+
+      <div className={cls.projectItems2}>
+        <div className={cls.projectsGrid}>
+          {projectsItemData.map((projectsItem, index) => (
+            <div className={cls.projectsItem2} key={index}>
+              <ProjectsItem
+                description={projectsItem.description}
+                flagIcon={projectsItem.flagIcon}
+                imgSrc={projectsItem.imgSrc}
+                name={projectsItem.name}
+                title={projectsItem.title}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
       <button className={cls.projectButton}>Другие проекты</button>
     </section>
   );
-}; 
+};

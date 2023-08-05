@@ -17,7 +17,6 @@ export const News = () => {
         <img src={topLine} alt="topLine" className={cls.topLine} />
       </div>
 
-
       <div className={cls.title}>
         <div className={cls.write}>
           <img src={list} alt="" />
@@ -37,8 +36,20 @@ export const News = () => {
             prevClassName="prevCard"
           />
         </div>
+
+        <div className={cls.newsItems2}>
+          {newsData.map((newsItem) => (
+            <NewsItem
+              description={newsItem.description}
+              imgSrc={newsItem.imgSrc}
+              date={newsItem.date}
+              title={newsItem.title}
+            />
+          ))}
+        </div>
         <button className={cls.newsButton}> Все новости </button>
       </div>
+      <div className={cls.bottomPart}></div>
     </section>
   );
 };

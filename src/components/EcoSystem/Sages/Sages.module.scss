@@ -37,15 +37,25 @@
     display: flex;
     align-items: center;
     margin: 0;
+    margin-bottom: -25px;
 
     img {
         margin-right: 5px;
+    }
+
+    @media (max-width:900px) {
+        margin-bottom: -5px;
     }
 
     @media (max-width:480px) {
         h2 {
             font-size: 18px;
             font-weight: 700;
+        }
+
+        img {
+            width: 20.756px;
+            height: 22.39px;
         }
     }
 }
@@ -67,11 +77,11 @@
         margin: 0 auto;
     }
 
-    @media (max-width:480px) {
+    @media (max-width:625px) {
         max-width: 218px;
         height: 44px;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 700;
         line-height: 18.5px;
     }
 }
@@ -83,6 +93,8 @@
     @media (max-width:480px) {
         max-width: 228.355px;
         max-height: 197.726px;
+        margin-left: auto;
+        margin-right: 30px;
     }
 }
 

@@ -41,6 +41,11 @@
     @media (max-width:900px) {
         flex-direction: column;
     }
+
+    @media (max-width:480px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .title {
@@ -48,7 +53,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding-left: 35px;
+    margin-bottom: -65px;
 
     img {
         margin-right: 5px;
@@ -59,13 +64,21 @@
         align-items: center;
         justify-content: flex-start;
         padding-left: 15px;
-
+        margin-bottom: -35px;
     }
 
     @media (max-width:480px) {
+        margin-left: 25px;
+        padding-left: 0px;
+
         h2 {
             font-size: 18px;
             font-weight: 700;
+        }
+
+        img {
+            width: 29px;
+            height: 23.201px;
         }
     }
 }
@@ -85,14 +98,13 @@
         font-size: 18px;
         font-weight: 700;
 
-        @media (max-width:560px) {
+        @media (max-width:625px) {
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 218px;
+            max-width: 215px;
             max-height: 44px;
             margin-bottom: 10px;
-            margin-right: 0;
         }
     }
 
@@ -109,14 +121,14 @@
         background: var(--partners-button-color);
         box-shadow: -21px 16px 38px 0px rgba(193, 45, 217, 0.32);
 
-        @media (max-width:560px) {
+        @media (max-width:625px) {
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 218px;
+            max-width: 215px;
             max-height: 44px;
             margin-bottom: 10px;
-            margin-right: 0;
+            margin-right: 5px;
         }
     }
 
@@ -176,5 +188,33 @@
     @media (max-width:480px) {
         max-width: 228px;
         max-height: 197px;
+        margin-right: auto;
+        margin-left: 25px;
     }
 }
+
+.partnersSlider {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+  
+    .partners {
+      display: flex;
+      transition: transform 0.3s ease;
+  
+      .partnersIcons {
+        margin-right: 20px;
+        flex-shrink: 0;
+  
+        img {
+          max-width: 100px;
+          max-height: 100px;
+        }
+      }
+    }
+  }

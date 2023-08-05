@@ -10,7 +10,7 @@
   @media (max-width: 560px) {
     max-width: 550px;
     width: 94%;
-    padding-right: 25px;
+    // padding-right: 25px;
     margin-left: 25px;
     box-sizing: border-box;
   }
@@ -90,8 +90,12 @@
   left: -39%;
   transform: rotate(360deg);
 
+  @media (max-width:625px) {
+    top: 85%;
+    left: 60%;
+  }
+
   @media (max-width:560px) {
-    top: 80%;
     right: 32%;
   }
 
@@ -109,13 +113,17 @@
     right: 2%;
   }
 
+  @media (max-width:625px) {
+    right: 1%;
+  }
+
   @media (max-width:560px) {
     right: 4%;
   }
 
   @media (max-width:480px) {
     top: 48%;
-    right: 5%;
+    right: -4%;
   }
 }
 

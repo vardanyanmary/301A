@@ -28,6 +28,7 @@ export const Important = () => {
             <p key={index}>{paragraph}</p>
           ))}
         </div>
+        <div className={cls.bottomPart}></div>
       </div>
     </section>
   );

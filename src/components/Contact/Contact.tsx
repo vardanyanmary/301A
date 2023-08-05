@@ -11,7 +11,7 @@ export const Contact = () => {
       </div>
       <div className={cls.title}>
         <div className={cls.write}>
-          <img src={write} alt="" className={cls.letter}/>
+          <img src={write} alt="" className={cls.letter} />
           <span>Напишите нам</span>
         </div>
       </div>
@@ -35,6 +35,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
+        <div className={cls.bottomPart}></div>
       <img src={styleImg} alt="" className={cls.styleImg} />
     </section>
   );

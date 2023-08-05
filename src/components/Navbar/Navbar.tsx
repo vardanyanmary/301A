@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { links } from "../../constants/navbarMenuLinks";
+import { links, links1 } from "../../constants/navbarMenuLinks";
 import img301 from "../../shared/assets/301 logo black.svg";
+import menuToggle from "../../shared/assets/Group 5972.svg";
+import secondImg from "../../shared/assets/Vector (3).svg";
 import cls from "./Navbar.module.scss";
 
 export const Navbar = () => {
@@ -36,20 +38,23 @@ export const Navbar = () => {
         </nav>
 
         <div className={`${cls.sideMenu} ${showSideMenu ? cls.show : ""}`}>
-          {links.map((link) => (
+          {links1.map((link) => (
             <a key={link.name} href={link.href}>
               {link.name}
             </a>
           ))}
-        </div>
-      </div>
 
-      <span className={cls.eng}> ENG </span>
+          {showSideMenu && (
+            <img src={secondImg} alt="" className={cls.secondImg} />
+          )}
+        </div>
+        <span className={cls.eng}> ENG </span>
+      </div>
+      <span className={cls.eng1}> ENG </span>
 
       <button className={cls.signIn}>Sign in</button>
-
       <button className={cls.menuToggle} onClick={handleToggleSideMenu}>
-        {showSideMenu ? "Close Menu" : "Open Menu"}
+        <img src={menuToggle} alt="" />
       </button>
     </section>
   );

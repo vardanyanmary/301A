@@ -36,6 +36,7 @@ export const Mission = () => {
             </p>
             <button className={cls.buttonMore}>Узнать больше</button>
           </div>
+          <div className={cls.bottomPart}> </div>
         </div>
       </section>
     </>
